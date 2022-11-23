@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Звонки</title>
+    <style>
+        * {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+        }
+        
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        #auth {
+            height: 53vh;
+            width: 44vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        #logo {
+            width: auto;
+            height: 57px;
+        }
+        
+        .auth_inp {
+            width: 93%;
+            padding: 3% 5%;
+            margin: 3% 0;
+            min-width: 176px;
+            height: 4vh;
+            border-radius: 10px;
+            border: none;
+            background: #F5F6F8;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .auth_inp:first-child {
+            margin-top: 4.5vh;
+        }
+        
+        #submit {
+            width: 100%;
+            margin: 0;
+            padding: 2% 3%;
+            background: #0057FF;
+            border: none;
+            border-radius: 12px;
+            color: #FFF;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 12px 180px;
+        }
+        
+        #rem_pass {
+            font-size: 12px;
+            color: rgba(60, 60, 67, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="auth">
+        <img src="/logo.png" alt="" id="logo">
+        <form action="">
+            <input type="email" class="auth_inp" required placeholder="Почта">
+            <input type="password" class="auth_inp" required placeholder="Пароль">
+            <button type="submit" id="submit">Войти</button>
+        </form>
+        <p id="rem_pass">Для смены пароля свяжитесь с
+            <font color="#0057FF">@mimbol</font>
+        </p>
+    </div>
+</body>
+
+</html>
