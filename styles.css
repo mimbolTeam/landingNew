@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --blue-light: #0057FF;
+  --text-text: rgba(60, 60, 67, 0.6);
+  --red-light-red: #FFCDCD;
+  --red-red: #E21515;
+  --surface-surface-stroke: #F5F5F6;
+  --surface-background: #FBFBFB;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--surface-background);
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-text);
+  border: 2px solid var(--surface-surface-stroke);
+  border-radius: 30px;
+  padding: 1.875rem 3.125rem;
+  margin: 2.1875rem;
+  margin-bottom: 1.5625rem;
+}
+
+.nav-wrapper .left_nav,.right_nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 2.1875rem;
+  padding-left: 3.125rem;
+}
+
+.nav-wrapper .nav_item.active {
+  color: var(--blue-light);
+}
+
+.right_nav .name {
+  padding-right: 0.9375rem;
+}
+
+.right_nav button {
+  height: 2.0625rem;
+  width: 5.625rem;
+  border: none;
+  border-radius: 11px;
+  padding: 0.4375rem 1.25rem;
+  background-color: var(--red-light-red);
+  color: var(--red-red);
+}
